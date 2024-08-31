@@ -1,6 +1,6 @@
 :root {
     --fuentePrincipal: "Montserrat", system-ui;
-
+    --negro: #000;
 }
 
 *,
@@ -54,9 +54,73 @@ h3 {
     font-size: 2.2rem;
 }
 
+li {
+    list-style: none;
+}
+
 
 /*!NAV  */
 
+.navegacion {
+    display: none;
+}
+
+.contenedor {
+    height: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+.contenedor__menu-mbl {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.svg-nav-bar {
+    height: 100%;
+    width: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .navegacion {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .nav-item {
+        transition: font-size 0.3s ease;
+
+        border-left: 1px solid var(--negro);
+        border-image: linear-gradient(to bottom, transparent 30%, var(--negro) 10%, var(--negro) 90%, transparent 70%);
+        border-image-slice: 1;
+        padding-left: 1rem;
+        
+    }
+
+    .nav-item:first-child {
+        border-left: none;
+    }
+
+    .nav-item:hover {
+        font-size: 2.3rem;
+
+    }
+
+    .contenedor__menu-mbl {
+        display: none;
+    }
+
+    .contenedor {
+        justify-content: center;
+        margin-top: 2rem;
+
+    }
+}
 
 /* !CABECERA */
 
