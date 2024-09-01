@@ -45,14 +45,24 @@ body {
 
 @media (min-width: 768px) {
     body {
+        width: 100%;
+    }
+
+    .padre-santo {
         width: 70%;
+        margin: 1rem auto;
     }
 
 }
 
 @media (min-width: 1024px) {
     body {
+        width: 100%;
+    }
+
+    .padre-santo {
         width: 50%;
+        margin: 1rem auto;
     }
 }
 
@@ -246,6 +256,86 @@ h1 {
 
 
 /*!SOBRE MI  */
+
+
+/*!ESTUDIOS  */
+
+.sobre-mi__Estudios {
+    background-image: url(../img/5594016.jpg);
+    background-size: cover;
+    border-radius: 0.5rem;
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+.estudios__title {
+    color: var(--blanco);
+}
+
+.contenedor__estudios,
+.estudios,
+.sobre-mi__Estudios {
+    position: relative;
+}
+
+.contenedor__estudios {
+    width: 100%;
+    padding: 1rem;
+}
+
+.estudios {
+    padding: 1rem 1.5rem;
+    background: var(--azulPrimario);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor__estudios {
+        padding: 1rem 2rem;
+        width: 50%;
+    }
+
+    .contenedor__estudios--izq {
+        left: 0;
+    }
+
+    .contenedor__estudios--drc {
+        left: 50%;
+    }
+
+    .estudios {
+        font-size: 1.8rem;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .sobre-mi__Estudios {
+        border-radius: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenedor__estudios {
+        width: 50%;
+        padding: 1rem 5rem;
+    }
+
+
+
+    .estudios {
+        padding: 2rem 3rem;
+        font-size: 2rem;
+    }
+
+    .sobre-mi__Estudios {
+        max-width: 120rem;
+        margin: 4rem auto;
+        padding: 1rem;
+        padding-bottom: 3rem;
+    }
+}
 
 
 /*!PROYECTOS  */
