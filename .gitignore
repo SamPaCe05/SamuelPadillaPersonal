@@ -1,0 +1,38 @@
+# Archivos del sistema
+Thumbs.db
+$RECYCLE.BIN/
+Desktop.ini
+ehthumbs.db
+
+# Archivos de editores y entornos
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+nbproject/
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# Archivos de sistema y dependencias
+bin/
+obj/
+out/
+*.log
+*.tmp
+node_modules/
+__pycache__/
+target/
+build/
+
+# Archivos específicos de Windows
+*.lnk
+
+# Archivos de entorno
+.env
+.env.local
