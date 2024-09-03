@@ -14,6 +14,19 @@
 
 /*!UTILIDADES  */
 
+.oculto {
+    animation: fade-out 0.5s forwards;
+
+}
+
+@keyframes fade-out {
+    to {
+        display: none !important;
+        opacity: 0;
+    }
+
+}
+
 .text-center {
     text-align: center;
 }
@@ -42,6 +55,14 @@ body {
     margin: 0 auto;
 }
 
+@media (width >=500px) and (width <=768px) {
+
+    .habilidades {
+        margin: 0 auto;
+        max-width: 50rem;
+    }
+
+}
 
 @media (min-width: 768px) {
     body {
@@ -101,10 +122,47 @@ a {
 
 
 /*!NAV  */
-
 .navegacion {
     display: none;
 }
+
+.navegacion--activa {
+    background-color: var(--azulPrimario);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    opacity: 0.9;
+    margin: 4rem auto;
+    border-radius: 1rem;
+}
+
+.nav-item a {
+    color: var(--blanco);
+    font-size: 3rem;
+
+}
+
+
+/* .contenedor {
+    height: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor__menu-mbl {
+    width: 8rem;
+    height: 100%;
+    margin-right: 2rem;
+} */
+
 
 .contenedor {
     height: 5rem;
@@ -112,6 +170,7 @@ a {
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-top: 1.4rem;
+    justify-content: center;
 }
 
 .contenedor__menu-mbl {
@@ -122,13 +181,19 @@ a {
 
 }
 
-
 @media (min-width: 1024px) {
     .navegacion {
         display: flex;
         gap: 3rem;
+        flex-direction: row;
+        background-color: white;
         align-items: center;
+        justify-content: center;
+        position: relative;
+        width: auto;
+        height: auto;
     }
+
 
     .contenedor {
         justify-content: center;
@@ -146,10 +211,20 @@ a {
         border-left: none;
     }
 
+    .nav-item a {
+        color: var(--azulPrimario);
+        font-size: 2.4rem;
+        transition: font-size 0.3s ease;
+    }
+
+
     .nav-item:hover {
         cursor: pointer;
-        font-size: 2.3rem;
 
+    }
+
+    .nav-item a:hover {
+        font-size: 3rem;
     }
 
     .contenedor__menu-mbl {
@@ -344,7 +419,6 @@ h1 {
 
 .cards {
     display: grid;
-    /* background-color: rgb(212, 203, 203); */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0.5rem;
@@ -379,14 +453,13 @@ h1 {
 }
 
 
-
 .card--1 {
-    background-color: red;
+    background-color: var(--azulSecundario);
     grid-area: card1;
 }
 
 .card--2 {
-    background-color: blue;
+    background-color: var(--azulPrimario);
     grid-area: card2;
 }
 
@@ -396,23 +469,20 @@ h1 {
 }
 
 .card--4 {
-    background-color: tomato;
+    background-color: var(--azulSecundario);
     grid-area: card4;
 
 }
 
 .card--5 {
-    background-color: violet;
+    background-color: var(--azulPrimario);
     grid-area: card5;
 }
 
 .card--6 {
-    background-color: bisque;
+    background-color: var(--azulSecundario);
     grid-area: card6;
 }
-
-
-
 
 
 /*!HABILIDADES  */
@@ -467,8 +537,8 @@ h1 {
     padding: 0rem;
 
 }
-    
-    .habilidades__svg svg {
+
+.habilidades__svg svg {
     width: 100%;
     height: 100%;
     padding: 1rem;
