@@ -4,6 +4,7 @@
     --blanco: #fff;
     --azulPrimario: #5852f8;
     --azulSecundario: #241fcf;
+    --footer: rgba(88, 82, 248, 0.7);
 }
 
 *,
@@ -15,9 +16,6 @@
 /*!UTILIDADES  */
 
 @media (width >=320px) and (width <=1023px) {
-
-
-
 
     .oculto {
         animation: fade-out 0.5s forwards;
@@ -420,11 +418,15 @@ h1 {
 }
 
 
-/*!PROYECTOS  */
+/*!Intereses  */
 
+.intereses h2 {
+    text-transform: capitalize;
+}
 
 .cards {
     display: grid;
+    margin-top: 5rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0.5rem;
@@ -448,6 +450,8 @@ h1 {
 }
 
 @media (min-width: 768px) {
+
+
 
     .card--1:hover,
     .card--2:hover,
@@ -569,9 +573,9 @@ h1 {
 
 /*!FOOTER  */
 
-footer.comandos-redes {
+footer {
+
     background-color: var(--footer);
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;

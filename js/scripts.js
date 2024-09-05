@@ -32,3 +32,17 @@ function barra() {
 window.addEventListener('click', barra());
 
 
+
+
+document.addEventListener('keydown', e => {
+    if (e.ctrlKey && e.key === 'i') {
+        e.preventDefault()
+        window.location.href = 'https://www.instagram.com/sampcd/'
+    } else if (e.ctrlKey && e.key === 'x') {
+        e.preventDefault()
+        window.location.href = 'https://x.com/Samuel38647306'
+    } else if (e.ctrlKey && e.key === 'f') {
+        e.preventDefault()
+        window.location.href = 'https://www.facebook.com/samuel.padillacedeno'
+    }
+})
