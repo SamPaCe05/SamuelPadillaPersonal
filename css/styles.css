@@ -568,3 +568,61 @@ h1 {
 
 
 /*!FOOTER  */
+
+footer.comandos-redes {
+    background-color: var(--footer);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.redes__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.redes__footer span {
+    font-size: 16px;
+}
+
+.link-svg {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+}
+
+.link-svg svg {
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    span {
+        display: flex;
+    }
+
+    footer.comandos-redes {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+
+    .redes__footer {
+        justify-content: space-evenly;
+    }
+
+    .redes__footer span {
+        font-size: 1.6rem;
+    }
+}
