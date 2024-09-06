@@ -15,10 +15,13 @@ window.addEventListener('load', eliminarclase())
 function barra() {
     if (window.innerWidth > 1024) {
         menuBar.addEventListener('click', () => {
+
             menuBar.classList.add('oculto');
             nav.classList.add('navegacion--activa')
             nav.classList.remove('oculto')
+            
         })
+
         const links = document.querySelectorAll('.navegacion a');
         links.forEach(link => {
             link.addEventListener('click', e => {
@@ -26,6 +29,7 @@ function barra() {
                 nav.classList.add('oculto')
                 nav.classList.remove('navegacion--activa')
             })
+
         })
     }
 }
@@ -46,3 +50,7 @@ document.addEventListener('keydown', e => {
         window.location.href = 'https://www.facebook.com/samuel.padillacedeno'
     }
 })
+
+
+
+// !idiomas
