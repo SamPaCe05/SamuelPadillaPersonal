@@ -121,11 +121,11 @@
         </div>
 
         <nav class="navegacion">
-            <li class="nav-item"><a href="#yo">quién soy</a></li>
-            <li class="nav-item"><a href="#acerca-mi">acerca de mí</a></li>
-            <li class="nav-item"><a href="#estudios">estudios</a></li>
-            <li class="nav-item"><a href="#intereses">intereses</a></li>
-            <li class="nav-item"><a href="#habilidades">habilidades</a></li>
+            <li class="nav-item"><a href="#yo" data-section="nav" data-value="quien-soy">quién soy</a></li>
+            <li class="nav-item"><a href="#acerca-mi" data-section="nav" data-value="acerca">acerca de mí</a></li>
+            <li class="nav-item"><a href="#estudios" data-section="nav" data-value="estudios">estudios</a></li>
+            <li class="nav-item"><a href="#intereses" data-section="nav" data-value="intereses">intereses</a></li>
+            <li class="nav-item"><a href="#habilidades" data-section="nav" data-value="habilidades">habilidades</a></li>
         </nav>
 
         <div class="contenedor__menu-mbl">
@@ -168,7 +168,8 @@
                 <div class="contenido-principal__visual">
 
                     <div class="contenido-principal__prs">
-                        <p class="contenido-principal__parrafo text-center">
+                        <p class="contenido-principal__parrafo text-center" data-section="Quien-soy"
+                            data-value="presentacion">
                             Jovén Caqueteño estudiante de ingeniería de sistemas del quinto semestre de la universidad
                             de la Amazonia.
                         </p>
@@ -218,7 +219,8 @@
                     <h2 class="info__titulo text-center">
                         acerca de mí
                     </h2>
-                    <p class="sobre-mi__text">Tengo 19 años y actualmente me encuentro cursando ingeniería
+                    <p class="sobre-mi__text" data-section="Acerca-mi" data-value="descripcion">Tengo 19 años y
+                        actualmente me encuentro cursando ingeniería
                         de software
                         en el quinto semestre en la universidad de la Amazonia, decidí estudiar esta carrera con el fin
                         de
@@ -237,11 +239,13 @@
 
     <section id="estudios" class="sobre-mi__Estudios">
 
-        <h2 class="estudios-titulo-princ text-center">Estudios</h2>
+        <h2 class="estudios-titulo-princ text-center" data-section="estudios" data-value="title-general">Estudios</h2>
         <div class="contenedor__estudios contenedor__estudios--izq">
             <section class="estudios">
-                <h3 class="estudios__title text-center">Pregrado</h3>
-                <p class="estudios__text text-center">Cursando hasta la fecha, con el fin de graduarme con honores y
+                <h3 class="estudios__title text-center" data-section="estudios" data-value="title-pregrado">Pregrado
+                </h3>
+                <p class="estudios__text text-center" data-section="estudios" data-value="pregrado-info">Cursando hasta
+                    la fecha, con el fin de graduarme con honores y
                     poder ejercer
                     mi profesión de manera efectiva y eficiente.</p>
 
@@ -252,8 +256,9 @@
 
 
             <section class="estudios">
-                <h3 class="estudios__title text-center">técnico</h3>
-                <p class="estudios__text text-center">Terminado en el año 2021, un técnico en contabilidad que me
+                <h3 class="estudios__title text-center" data-section="estudios" data-value="title-tecnico">técnico</h3>
+                <p class="estudios__text text-center" data-section="estudios" data-value="tecnico-info">Terminado en el
+                    año 2021, un técnico en contabilidad que me
                     permitió aprender los fundamentos de la contabilidad, como el ciclo contable, los estados
                     financieros y la normativa fiscal.
                 </p>
@@ -262,8 +267,10 @@
 
         <div class="contenedor__estudios contenedor__estudios--izq">
             <section class="estudios">
-                <h3 class="estudios__title text-center">bachillerato</h3>
-                <p class="estudios__text text-center">Terminado en el año 2021, graduado con honores y dando mis
+                <h3 class="estudios__title text-center" data-section="estudios" data-value="title-bachiller">
+                    bachillerato</h3>
+                <p class="estudios__text text-center" data-section="estudios" data-value="bachiller-info">Terminado en
+                    el año 2021, graduado con honores y dando mis
                     primeros pasos
                     hacia la vida universitaria</p>
             </section>
@@ -327,8 +334,10 @@
     <section class="habilidades">
         <div>
 
-            <h2 id="habilidades" class="habilidades__titulo text-center">habilidades</h2>
-            <p class="text-center">La programación es mi pasión. Me encanta el desafío de transformar
+            <h2 id="habilidades" class="habilidades__titulo text-center" data-section="habilidades"
+                data-value="title-habilidades">habilidades</h2>
+            <p class="text-center" data-section="habilidades" data-value="habilidad">La programación es mi pasión. Me
+                encanta el desafío de transformar
                 ideas en realidad a través del código. Por eso, me dedico a aprender y mejorar constantemente mis
                 habilidades en frameworks y lenguajes de programación. Mi meta es convertirme en un experto en backend,
                 como desarrollador full-stack para crear aplicaciones web
@@ -496,7 +505,7 @@
             <!-- *OTRAS -->
 
             <section class="otras">
-                <h3 class="otras__title text-center">otros</h3>
+                <h3 class="otras__title text-center" data-section="habilidades" data-value="espec">otros</h3>
 
                 <div class="espec__icons">
 
@@ -547,7 +556,7 @@
 
 
         <div class="redes__footer">
-            <span>Pulsa Ctrl + x</span>
+            <span data-section="footer" data-value="x">Pulsa Ctrl + x</span>
             <a href="https://x.com/Samuel38647306" class="link-svg none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 1024 1024"
                     class="icon" version="1.1">
@@ -561,7 +570,7 @@
             </a>
         </div>
         <div class="redes__footer">
-            <span>Pulsa Ctr + i</span>
+            <span data-section="footer" data-value="instagram">Pulsa Ctr + i</span>
 
             <a href="https://www.instagram.com/sampcd/" class="link-svg none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 32 32" fill="none">
@@ -602,7 +611,7 @@
             </a>
         </div>
         <div class="redes__footer">
-            <span>Pulsa Ctrl + f</span>
+            <span data-section="footer" data-value="facebook">Pulsa Ctrl + f</span>
 
             <a href="https://www.facebook.com/samuel.padillacedeno" class="link-svg none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 1024 1024"

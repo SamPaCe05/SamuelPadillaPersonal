@@ -1,0 +1,35 @@
+{
+    "nav": {
+        "quien-soy": "who I am",
+        "acerca": "about me",
+        "estudios": "studies",
+        "intereses": "interests",
+        "habilidades": "skills"
+    },
+    "Quien-soy": {
+        "presentacion": "Young student from Caquetá, pursuing a degree in Systems Engineering in the fifth semester at the University of Amazonia."
+    },
+    "Acerca-mi": {
+        "descripcion": "I am 19 years old and currently in the fifth semester of Software Engineering at the University of Amazonia. I decided to study this career to fuel my passion for computing, which I have had since I was much younger, and to dive into the understanding and design of systems to efficiently and precisely solve problems."
+    },
+    "estudios": {
+        "title-general": "studies",
+        "title-pregrado": "undergraduate",
+        "pregrado-info": "Currently studying with the goal of graduating with honors and being able to practice my profession effectively and efficiently.",
+        "title-tecnico": "technical degree",
+        "tecnico-info": "Completed in 2021, a technical degree in accounting that allowed me to learn the fundamentals of accounting, such as the accounting cycle, financial statements, and tax regulations.",
+        "title-bachiller": "high school",
+        "bachiller-info": "Graduated in 2021 with honors, taking my first steps towards university life."
+    },
+    "intereses": {},
+    "habilidades": {
+        "title-habilidades": "Skills",
+        "habilidad": "Programming is my passion. I love the challenge of turning ideas into reality through code. That's why I constantly strive to learn and improve my skills in frameworks and programming languages. My goal is to become an expert in backend development, as a full-stack developer, to create robust, scalable web applications with excellent user experience.",
+        "espec": "others"
+    },
+    "footer": {
+        "instagram": "Press Ctrl + i",
+        "x": "Press Ctrl + x",
+        "facebook": "Press Ctrl + f"
+    }
+}

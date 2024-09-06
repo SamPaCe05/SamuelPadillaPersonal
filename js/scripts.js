@@ -19,7 +19,7 @@ function barra() {
             menuBar.classList.add('oculto');
             nav.classList.add('navegacion--activa')
             nav.classList.remove('oculto')
-            
+
         })
 
         const links = document.querySelectorAll('.navegacion a');
@@ -36,6 +36,8 @@ function barra() {
 window.addEventListener('click', barra());
 
 
+
+// !footer comandos
 
 
 document.addEventListener('keydown', e => {
@@ -54,3 +56,33 @@ document.addEventListener('keydown', e => {
 
 
 // !idiomas
+const cambios = document.querySelectorAll("[data-section]")
+
+const leer = async idm => {
+    const json = await fetch(`./json/${idm}.json`)
+    const datos = await json.json()
+    cambios.forEach(lan => {
+        const section = lan.dataset.section
+        const value = lan.dataset.value
+        
+        //   lan.textContent = datos[section][value] || ''
+
+        lan.innerHTML = datos[section][value]
+    })
+}
+
+
+const toggle = document.getElementById('toggle')
+let idioma;
+toggle.addEventListener('click', e => {
+    if (toggle.checked) {
+        idioma = 'en';
+        leer(idioma)
+    } else {
+        idioma = 'es';
+        leer(idioma)
+
+    }
+})
+
+
