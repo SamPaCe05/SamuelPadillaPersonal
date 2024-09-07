@@ -10,6 +10,7 @@
         "presentacion": "Jovén Caqueteño estudiante de ingeniería de sistemas del quinto semestre de la universidad de la Amazonia."
     },
     "Acerca-mi": {
+        "title-acerca": "acera de mí",
         "descripcion": "Tengo 19 años y actualmente me encuentro cursando ingeniería de software en el quinto semestre en la universidad de la Amazonia, decidí estudiar esta carrera con el fin de alimentar la pasión por la informatica que traigo conmigo desde que era mucho más joven y adentrarme al entendimiento y diseño de sistemas con el fin de hallar solución a los problemas de manera eficiente y precisa."
     },
     "estudios": {
@@ -21,7 +22,21 @@
         "title-bachiller": "bachillerato",
         "bachiller-info": "Terminado en el año 2021, graduado con honores y dando mis primeros pasos hacia la vida universitaria"
     },
-    "intereses": {},
+    "intereses": {
+        "title": "mis intereses",
+        "title-pg": "programación",
+        "programacion": "Me lleva a resolver problemas de manera lógica y eficiente, lo cual me permite llevar mis conocimientos mucho más allá",
+        "title-in": "Inglés",
+        "ingles": "El idioma extranjero me garantiza muchas puertas abiertas con el solo hecho de saberlo",
+        "title-m": "Machine Learning",
+        "machine": "Enseñar a las computadoras para que aprendan de los datos y mejoren con la experiencia me parece fascinante",
+        "title-pw": "Programación Web",
+        "programacion-web": "La programación web me parece el lugar perfecto para plasmar mis ideas",
+        "title-ft": "Fotografía",
+        "fotografia": "La fotografía para mí es como capto mis recuerdos de manera detallada y transmitir mi punto de vista sin palabras",
+        "title-lg": "Liderazgo de Equipos de Desarrollo",
+        "Liderazgo": "Me apasiona el liderazgo de equipos de desarrollo porque me permite combinar mi interés por la tecnología con mi deseo de inspirar a otros a crear soluciones innovadoras y de alta calidad"
+    },
     "habilidades": {
         "title-habilidades": "Habilidades",
         "habilidad": "La programación es mi pasión. Me encanta el desafío de transformar ideas en realidad a través del código. Por eso, me dedico a aprender y mejorar constantemente mis habilidades en frameworks y lenguajes de programación. Mi meta es convertirme en un experto en backend, como desarrollador full-stack para crear aplicaciones web robustas, escalables y con una excelente experiencia de usuario.",

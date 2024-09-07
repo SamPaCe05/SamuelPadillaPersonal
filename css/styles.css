@@ -144,7 +144,10 @@ a {
     align-items: center;
     width: 90%;
     opacity: 0.9;
-    margin: 4rem auto;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 1rem;
 }
 

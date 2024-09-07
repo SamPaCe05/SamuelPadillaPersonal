@@ -10,6 +10,7 @@
         "presentacion": "Young student from Caquetá, pursuing a degree in Systems Engineering in the fifth semester at the University of Amazonia."
     },
     "Acerca-mi": {
+        "title-acerca": "about me",
         "descripcion": "I am 19 years old and currently in the fifth semester of Software Engineering at the University of Amazonia. I decided to study this career to fuel my passion for computing, which I have had since I was much younger, and to dive into the understanding and design of systems to efficiently and precisely solve problems."
     },
     "estudios": {
@@ -21,7 +22,21 @@
         "title-bachiller": "high school",
         "bachiller-info": "Graduated in 2021 with honors, taking my first steps towards university life."
     },
-    "intereses": {},
+    "intereses": {
+        "title": "my interests",
+        "title-pg": "programming",
+        "programacion": "It leads me to solve problems logically and efficiently, which allows me to take my knowledge much further.",
+        "title-in": "English",
+        "ingles": "Knowing a foreign language opens many doors for me just by being able to speak it.",
+        "title-m": "Machine Learning",
+        "machine": "Teaching computers to learn from data and improve through experience fascinates me.",
+        "title-pw": "Web Development",
+        "programacion-web": "Web development seems like the perfect place to bring my ideas to life.",
+        "title-ft": "Photography",
+        "fotografia": "Photography is how I capture my memories in detail and express my point of view without words.",
+        "title-lg": "Development Team Leadership",
+        "Liderazgo": "I am passionate about leading development teams because it allows me to combine my interest in technology with my desire to inspire others to create innovative, high-quality solutions."
+    },
     "habilidades": {
         "title-habilidades": "Skills",
         "habilidad": "Programming is my passion. I love the challenge of turning ideas into reality through code. That's why I constantly strive to learn and improve my skills in frameworks and programming languages. My goal is to become an expert in backend development, as a full-stack developer, to create robust, scalable web applications with excellent user experience.",
