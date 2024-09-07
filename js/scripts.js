@@ -1,39 +1,81 @@
 
-const menuBar = document.querySelector(".contenedor__menu-mbl")
-const nav = document.querySelector(".navegacion")
+const menuCel = document.querySelector(".contenedor__menu-mbl")
+const navegacion = document.querySelector(".navegacion")
+const links = document.querySelectorAll(".nav-item a")
 
-function eliminarclase() {
+// links.forEach(e => {
+//     console.log(e.innerHTML);
+// })
+
+menuCel.addEventListener('click', e => {
+    menuCel.classList.add('oculto')
+    navegacion.classList.remove('oculto')
+    navegacion.classList.add('navegacion--activa')
+})
+
+
+if (window.innerWidth < 1024) {
+    links.forEach(link => {
+        link.addEventListener('click', e => {
+
+            navegacion.classList.add("oculto")
+            navegacion.classList.remove("navegacion--activa")
+            menuCel.classList.remove("oculto")
+        })
+
+    })
+}
+function aux() {
+    if (window.innerWidth <= 1023 && navegacion.classList.contains("navegacion--activa") == false) {
+        menuCel.classList.remove('oculto')
+    }
+}
+function cargar() {
     if (window.innerWidth >= 1024) {
-        console.log("aoskask")
-        nav.classList.remove('oculto')
+        navegacion.classList.remove("navegacion--activa")
     }
 }
+window.addEventListener('resize', cargar)
+window.addEventListener('load', cargar)
 
-window.addEventListener('resize', eliminarclase())
-window.addEventListener('load', eliminarclase())
+window.addEventListener('resize', aux)
+window.addEventListener('load', aux)
 
-function barra() {
-    if (window.innerWidth > 1024) {
-        menuBar.addEventListener('click', () => {
+// const menuBar = document.querySelector(".contenedor__menu-mbl")
+// const nav = document.querySelector(".navegacion")
 
-            menuBar.classList.add('oculto');
-            nav.classList.add('navegacion--activa')
-            nav.classList.remove('oculto')
+// function eliminarclase() {
+//     if (window.innerWidth >= 1024) {
+//         console.log("aoskask")
+//         nav.classList.remove('oculto')
+//     }
+// }
 
-        })
+// window.addEventListener('resize', eliminarclase())
+// window.addEventListener('load', eliminarclase())
 
-        const links = document.querySelectorAll('.navegacion a');
-        links.forEach(link => {
-            link.addEventListener('click', e => {
-                menuBar.classList.remove('oculto')
-                nav.classList.add('oculto')
-                nav.classList.remove('navegacion--activa')
-            })
+// function barra() {
+//     if (window.innerWidth > 1024) {
+//         menuBar.addEventListener('click', () => {
 
-        })
-    }
-}
-window.addEventListener('click', barra());
+//             menuBar.classList.add('oculto');
+//             nav.classList.add('navegacion--activa')
+//             nav.classList.remove('oculto')
+
+//         })
+
+//         const links = document.querySelectorAll('.navegacion a');
+//         links.forEach(link => {
+//             link.addEventListener('click', e => {
+//                 menuBar.classList.remove('oculto')
+//                 nav.classList.add('oculto')
+//                 nav.classList.remove('navegacion--activa')
+//             })
+
+//         })
+//     }
+// }
+// window.addEventListener('click', barra());
 
 
 
@@ -64,7 +106,7 @@ const leer = async idm => {
     cambios.forEach(lan => {
         const section = lan.dataset.section
         const value = lan.dataset.value
-        
+
         //   lan.textContent = datos[section][value] || ''
 
         lan.innerHTML = datos[section][value]
